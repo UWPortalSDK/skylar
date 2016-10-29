@@ -122,8 +122,15 @@
     <widget-row>
         <widget-cell>
         	<h3 class = "details">{{item2.value.details}}</h3>
-            <img class = "img" ; src= {{item2.value.img_url}} />
+            <div ng-if="item2.value.img_url"><img class = "img" ; src= {{item2.value.img_url}} /></div>
         </widget-cell>
     </widget-row>
+    
+    <div ng-if="item2.value.service1" >
+    				<li>{{item2.value.service1}}</li>
+                    <li>{{item2.value.service2}}</li>
+                    <li>{{item2.value.service3}}</li>
+					<li>{{item2.value.service4}}</li>
+     </div>
 
 </script>
