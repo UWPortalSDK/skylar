@@ -79,8 +79,10 @@ Sunday: Closed ",
         
         details: [{
             title: "Arizona",
-        	details: "Who knows",
+        	details: "$0.99",
+            img_url:"https://i5.walmartimages.com/asr/9003fc0e-6a43-4c57-beef-f56705279c51_1.02a16974ea409c97d4fdebfd9be5bf53.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
         	category: '1'
+
         },{
             title: "Chips",
         	details: "who knows",
