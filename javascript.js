@@ -42,7 +42,27 @@ angular.module('portalApp')
         category: '1'
     }, {
         title: "Waterloo Store",
-        details: "item 2 details",
+        
+        location: "Location: South-campus-hall (SCH)",
+        hours:"Regular Hours Begin Monday, September 19 <br> \
+Monday – Tuesday: 9am – 6pm <br> \
+Wednesday - Friday: 9am - 5pm  <br> \
+Saturday: 12pm - 4pm <br> \
+Sunday: Closed ",
+        
+        details: [    
+        {title: "Collegiate Hoodie",
+        details: "item 1 details",
+        category: '2'},
+            
+        {title: "Ceremonial Seal Hoodie",
+        details: "item 1 details",
+        category: '2'},
+            
+         {title: "Nike Youth T-Shirt",
+        details: "item 1 details",
+        category: '2'}        
+                            ],
         category: '1'
     }, {
         title: "Write Stuff",
