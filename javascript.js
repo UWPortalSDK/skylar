@@ -40,59 +40,37 @@ angular.module('portalApp')
         category: '2'}    
       
                             ],
-         subtitle2: "Stationery:",
         category: '1'
     }, {
         title: "Waterloo Store",
         
         location: "Location: South-campus-hall (SCH)",
-        hours:"Regular Hours Begin Monday, September 19 <br> \
-Monday – Tuesday: 9am – 6pm <br> \
-Wednesday - Friday: 9am - 5pm  <br> \
-Saturday: 12pm - 4pm <br> \
+        hours:"Regular Hours Begin Monday, September 19 \r\n \
+Monday – Tuesday: 9am – 6pm \n \
+Wednesday - Friday: 9am - 5pm \r\n \
+Saturday: 12pm - 4pm \r\n \
 Sunday: Closed ",
         
+        subtitle1: "Men:",       
         details: [    
         {title: "Collegiate Hoodie",
-        details: "item 1 details",
+        details: "price $55.99",
         category: '2'},
             
         {title: "Ceremonial Seal Hoodie",
-        details: "item 1 details",
-        category: '2'},
-            
-         {title: "Nike Youth T-Shirt",
-        details: "item 1 details",
+        details: "price $34.99",
+        category: '2'}
+                           ],
+        subtitle2: "Women:",
+        details2: [
+        {title: "Ladies Collegiate Hoodie",
+        details: "price $55.99",
         category: '2'}        
                             ],
-        category: '1'
+        category: '1',
     }, {
         title: "Write Stuff",
-        location: "Location: South Campus Hall",
-        multiHours:[
-            {
-                time: "Monday-Tuesday: Monday-Tuesday, 9a.m-6p.m", 
-            },{
-                time: "Wednesday-Friday: Wednesday-Friday, 9a.m-5p.m",
-            },{
-                time: "Saturday: 12p.m - 4p.m",
-            },{
-                time: "Sunday: Closed"
-            }],
-        
-        details: [    
-        {title: "Notebooks",
-        details: "item 1 details",
-        category: '2'},
-            
-        {title: "Pencils",
-        details: "item 1 details",
-        category: '2'},
-            
-         {title: "Pens",
-        details: "item 1 details",
-        category: '2'}        
-                            ],
+        details: "item 3 details",
         category: '1'
     }, {
  title: "International News",
