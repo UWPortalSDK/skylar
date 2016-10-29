@@ -112,10 +112,11 @@
                 </widget-list>
             </widget-list>
         </widget-row>
+    
         <div ng-if="item.value.subtitle2"><b>{{item.value.subtitle2}}</b></div>
         <widget-row>
             <widget-list>
-                <widget-list list="it in item.value.details2" show-items="3">
+                <widget-list list="it in item.value.devices" show-items="3">
                     <widget-row clickable ng-click="showDetails2(it)">
                         <widget-cell fill>{{it.title}}
                         </widget-cell>
@@ -146,6 +147,16 @@
             <div ng-if="item2.value.img_url"><img class = "img" ; src= {{item2.value.img_url}} /></div>
         </widget-cell>
     </widget-row>
+   
+     <div ng-if="item2.value.multi_details">
+        <widget-list list="it in item2.value.multi_details" show-items="7">
+            <widget-row>
+                <font class="price"><h5>{{it.price}}</h5></font>
+            </widget-row>
+        </widget-list>
+    </div>
+   
+    
     
     <div ng-if="item2.value.service1" >
     				<li>{{item2.value.service1}}</li>
