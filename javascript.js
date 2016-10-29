@@ -18,6 +18,7 @@ angular.module('portalApp')
         note: "*Great Deal: get 30% off on printers befor Oct 30!",
         location: "Location: Student Life Center - Lower Level",
         hours:"Regular Hours: Monday-Friday, 9a.m-5p.m",  
+        goods:"notebooks, pencils, pens, laptops, 3d printers",
         
          services: [   
         {title: "Campus Tech Services",
@@ -83,6 +84,7 @@ angular.module('portalApp')
                 time: "Sunday: Closed ",
             }],
         
+        goods:"hoodie",
         subtitle1: "Men:",       
         details: [    
         {title: "Collegiate Hoodie",
@@ -115,6 +117,7 @@ angular.module('portalApp')
                 time: "Sunday: Closed"
             }],
         
+        goods:"notebooks, pencils, pens",
         details: [    
         {title: "Notebooks",
         details: "Price: $3.99",
@@ -135,7 +138,7 @@ angular.module('portalApp')
  title: "International News",
         location: "Location: Student Life Centre, 200 University Ave West, Waterloo, ON N2L 3G1",
         hours:"Open 24/7",  
-        
+        goods:"arizona, chips, maynards",
         details: [{
             title: "Arizona",
         	details: "$0.99",
