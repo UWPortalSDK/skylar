@@ -63,8 +63,23 @@ Sunday: Closed ",
         details: "item 3 details",
         category: '1'
     }, {
-        title: "International News",
-        details: "item 4 details",
+ title: "International News",
+        location: "Location: Student Life Centre, 200 University Ave West, Waterloo, ON N2L 3G1",
+        hours:"Open 24/7",  
+        
+        details: [{
+            title: "Arizona",
+        	details: "Who knows",
+        	category: '1'
+        },{
+            title: "Chips",
+        	details: "who knows",
+        	category: '1'
+        },{
+            title: "Maynards",
+        	details: "who knows",
+        	category: '1'
+        }],
         category: '1'
     }, {
         title: "Media.doc",
