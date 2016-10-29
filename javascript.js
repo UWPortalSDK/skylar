@@ -7,29 +7,25 @@ angular.module('portalApp')
 
     // Model for the search and list example
     $scope.model = {value: [{
-        title: "item 1",
+        title: "Campus Tech",
         details: "item 1 details",
         category: '1'
     }, {
-        title: "item 2",
+        title: "Waterloo Store",
         details: "item 2 details",
         category: '2'
     }, {
-        title: "item 3",
+        title: "Write Stuff",
         details: "item 3 details",
         category: '1'
     }, {
-        title: "item 4",
+        title: "International News",
         details: "item 4 details",
         category: '2'
     }, {
-        title: "item 5",
+        title: "Media.doc",
         details: "item 5 details",
         category: '1'
-    }, {
-        title: "item 6",
-        details: "item 6 details",
-        category: '2'
     }]};
 
     // initialize the service
