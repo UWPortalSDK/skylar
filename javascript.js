@@ -28,6 +28,15 @@ angular.module('portalApp')
 		service4: "Virus and malware removal" ,
         category: '2'} ],
         
+        subtitle0: "Service Rates",
+        multi_rates: [ {
+                rate: "Free consultation at the service desk",
+            }, {
+                rate: "$35/ half hour",
+            }, {
+                rate: "$65/ hour",
+            }],
+        
         subtitle1: "Stationery:",
         details: [    
         {title: "Notebooks",
@@ -40,9 +49,7 @@ angular.module('portalApp')
             
          {title: "Pens",
         details: "item 1 details",
-        category: '2'}    
-      
-                            ],
+        category: '2'} ],
         
          subtitle2: "Digital Devices:",
         
