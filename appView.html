@@ -1,20 +1,44 @@
-<!-- Primary template that will get shown when widget loads -->
-<script type="text/ng-template" id="skylarMain.html"> 
-	<div class="item item-text-wrap item-icon-right" ng-repeat="item in items" ng-click="showDetails(item)">
-		<span class="itemName">{{item.title}}</span>
-		<span ng-repeat= "tag in item.tags" class="badge badge-balanced">
-			{{tag}}
-		</span>
-	
-		<i class="ion-chevron-right icon"></i>
-	</div>
+<script type="text/ng-template" id="skylarMain.html">
+    <!-- SEARCH AND LIST EXAMPLE -->
+	<div class="item item-divider">Search and List Example</div>
+        
+	<widget-search 
+		 label="What do you seek, padawan?" 
+		 placeholder="Type in a search term you must" 
+		 search-results-title="Behold"
+		 data="model" 
+		 min-char="2" 
+		 fields="['title','details']">
+		<widget-filter 
+				fields="['category']" 
+				filters="[{value:'1',text:'Number 1'},{value:'2',text:'Number 2'}]">
+		</widget-filter>
+
+		<widget-searching>
+			<widget-list list="item in searchResults.value track by item.title" show-items="3" render="true">
+				<div class="item item-icon-right" ng-click="showDetails(item)">
+					{{item.title}}
+					<i class="icon icon-angle-right"></i>
+				</div>
+			</widget-list>
+		</widget-searching>
+
+		<widget-not-searching>
+			<div class="item item-divider">Item List</div>
+			<widget-list list="item in model.value track by item.title" show-items="3" render="true">
+				<div class="item item-icon-right" ng-click="showDetails(item)">
+					{{item.title}}
+					<i class="icon icon-angle-right"></i>
+				</div>
+			</widget-list>
+		</widget-not-searching>
+	</widget-search>
+
 </script>
 
-<!-- This template gets shown when user clicks one of the items in the list -->
-<script type="text/ng-template" id="skylarDetails.html"> 
-	<div class="item">
-		{{detailsItem.title}}
-	</div>
-	<div class="item item-text-wrap"><span ng-repeat= "tag in detailsItem.tags" class="badge badge-balanced">{{tag}}</span></div>
-	<div class="item item-text-wrap"><p>{{detailsItem.details}}</p></div>
+
+<!-- VIEW FOR THE SEARCH AND LIST EXAMPLE -->
+<script type="text/ng-template" id="skylarDetails.html">
+	<div class="item item-divider">{{item.value.title}}</div>
+	<div class="item">{{item.value.details}}</div>
 </script>
