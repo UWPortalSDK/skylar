@@ -3,7 +3,10 @@ angular.module('portalApp')
 .controller('skylarCtrl', ['$scope', '$http', '$q', 'skylarFactory', function ($scope, $http, $q, skylarFactory) {
 
     // Import variables and functions from service
-    $scope.item = {value:''};
+    $scope.item = [
+		{			
+			tags: ['tag A', 'tag B', 'tag C'],			
+		}];
 
     // Model for the search and list example
     $scope.model = {value: [{
