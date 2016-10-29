@@ -47,8 +47,19 @@ angular.module('portalApp')
         
          devices: [    
         {title: "Laptops",
-        details: "price $10",
-        category: '2'},
+         img_url: "https://info.uwaterloo.ca/campustech/images/webstore/items/10105236.jpg",
+       	 multi_details: [ {
+                price: "Demo ThinkPad X1 Tablet m5-6Y57 12 IPS 8GB 256SSD ",
+            }, {
+                price: "W10P",
+            }, {
+                price: "Stylus; Keyboard; Fingerprint Reader; 1Yr Depot",
+            }, {
+                price: "Sku: 10105236",
+            }, {
+                price: "Price: $1209.00",
+            }],
+         category: '2'},
             
         {title: "3D Printers",
         details: "item 1 details",
