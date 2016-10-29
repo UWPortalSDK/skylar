@@ -65,6 +65,14 @@
         <font class="location"><h5>{{item.value.location}}</h5></font>
     </widget-row>
 
+
+
+
+
+    <widget-row>
+        <font color="blue"><h5>{{item.value.hours}}</h5></font>
+    </widget-row>
+
     <!-- if find multi hours, show them -->
 
     <div ng-if="item.value.multiHours">
@@ -73,14 +81,8 @@
                 <font class="location"><h5>{{it.time}}</h5></font>
             </widget-row>
         </widget-list>
-
-
-
-        <widget-row>
-            <font color="blue"><h5>{{item.value.hours}}</h5></font>
-        </widget-row>
-
-
+    </div>
+    
         <widget-row>
             <widget-list>
                 <widget-list list="it in item.value.services" show-items="1">
