@@ -168,6 +168,19 @@ angular.module('portalApp')
         var nextItem = $scope.portalHelpers.getNextListItem();
         $scope.showDetails(nextItem);
     }
+    
+        // Handle "previous item" click from the details page
+    $scope.prevItem2 = function () {
+        // get previous items in the list
+        var prevItem = $scope.portalHelpers.getPrevListItem();
+        // refresh details view with the new item
+        $scope.showDetails2(prevItem);
+    }
+
+    $scope.nextItem2 = function () {
+        var nextItem = $scope.portalHelpers.getNextListItem();
+        $scope.showDetails2(nextItem);
+    }
 
 }])
 
