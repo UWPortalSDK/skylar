@@ -53,6 +53,14 @@
         </widget-cell>
     </widget-row>
     
+     <widget-row>
+         <div ng-if="item.value.star">
+            <img src="https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiZsNDCzIDQAhXlxYMKHRxYBdwQjRwIBw&url=http%3A%2F%2Fwww.campustech.uwaterloo.ca%2F&bvm=bv.136811127,d.amc&psig=AFQjCNE4mUa4LLHF32iOMzRqg8O550TmKA&ust=1477850489417439"/>
+        </div>    
+     </widget-row>
+    
+    <div ng-if="item.value.note" class="pDetails well well-lg">{{item.value.note}}</div>
+    
     <widget-row>     
             <font color="blue"><h5>{{item.value.location}}</h5></font>  
     </widget-row>  
@@ -60,11 +68,25 @@
             <font color="blue"><h5>{{item.value.hours}}</h5></font> 
     </widget-row>
     
-    <div ng-if="item.value.note" class="pDetails well well-lg">{{item.value.note}}</div>
+    
+     <widget-row>
+        <widget-list>
+             <widget-list list="it in item.value.services" show-items="1">
+                  <widget-row clickable ng-click="showDetails2(it)">
+                        <widget-cell fill>{{it.title}}                 
+                        </widget-cell>
+                        <widget-cell>
+                            <widget-icon name="angle-right"></widget-icon>
+                        </widget-cell>
+                    </widget-row>
+                </widget-list>
+        </widget-list>
+    </widget-row>
+    
      
     <widget-row>
         <widget-list>
-             <widget-list list="it in item.value.details" show-items="3">
+             <widget-list list="it in item.value.stationary" show-items="3">
                   <widget-row clickable ng-click="showDetails2(it)">
                         <widget-cell fill>{{it.title}}                 
                         </widget-cell>
