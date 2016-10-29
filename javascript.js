@@ -12,14 +12,14 @@ angular.module('portalApp')
     
     // Model for the search and list example
     $scope.model = {value: [{
-        
-  		star: "true",
         title: "Campus Tech",
         note: "*Great Deal: get 30% off on printers befor Oct 30!",
         location: "Location: Student Life Center - Lower Level",
         hours:"Regular Hours: Monday-Friday, 9a.m-5p.m",  
         goods:"notebooks, pencils, pens, laptops, 3d printers",
-        
+         img_url: "https://info.uwaterloo.ca/retailservices/enews/template/images/esmart_Campus_Tech_cmyk2.jpg",
+
+
          services: [   
         {title: "Campus Tech Services",
         service1: "Screen replacement",
@@ -76,7 +76,7 @@ angular.module('portalApp')
         category: '1'
     }, {
         title: "Waterloo Store",
-        
+        img_url: "https://info.uwaterloo.ca/waterloostore/images/webstore/WarriorsNavImage.jpg",
         location: "Location: South-campus-hall (SCH)",
         multiHours:[
             {
