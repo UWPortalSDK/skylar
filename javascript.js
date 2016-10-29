@@ -164,7 +164,20 @@ angular.module('portalApp')
         category: '1'
     }, {
         title: "Media.doc",
-        details: "item 5 details",
+        details:[{
+            title: "MC",
+        	details: "Sell CS course notes, taking photos for passport",
+        	category: '1'
+
+        },{
+            title: "DC",
+        	details: "who knows",
+        	category: '1'
+        },{
+            title: "STC",
+        	details: "who knows",
+        	category: '1'
+        }],
         category: '1'
     }]};
 
