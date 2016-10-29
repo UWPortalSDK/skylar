@@ -66,9 +66,6 @@
     </widget-row>
 
 
-
-
-
     <widget-row>
         <font color="blue"><h5>{{item.value.hours}}</h5></font>
     </widget-row>
@@ -155,7 +152,6 @@
             </widget-row>
         </widget-list>
     </div>
-   
     
     
     <div ng-if="item2.value.service1" >
@@ -163,6 +159,18 @@
                     <li>{{item2.value.service2}}</li>
                     <li>{{item2.value.service3}}</li>
 					<li>{{item2.value.service4}}</li>
+        
+    <widget-row>
+        <widget-cell>
+            <h4>{{item.value.subtitle0}}</h4>
+        </widget-cell>
+    </widget-row>
+    
+    <div ng-if="item.value.multi_rates">
+        <widget-list list="it in item.value.multi_rates" show-items="3">
+                <li><font class="rate"><h5>{{it.rate}}</h5></font></li>
+        </widget-list>
+    </div>
      </div>
 
 </script>

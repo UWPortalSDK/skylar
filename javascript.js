@@ -28,6 +28,15 @@ angular.module('portalApp')
 		service4: "Virus and malware removal" ,
         category: '2'} ],
         
+        subtitle0: "Service Rates",
+        multi_rates: [ {
+                rate: "Free consultation at the service desk",
+            }, {
+                rate: "$35/ half hour",
+            }, {
+                rate: "$65/ hour",
+            }],
+        
         subtitle1: "Stationery:",
         details: [    
         {title: "Notebooks",
@@ -40,9 +49,7 @@ angular.module('portalApp')
             
          {title: "Pens",
         details: "item 1 details",
-        category: '2'}    
-      
-                            ],
+        category: '2'} ],
         
          subtitle2: "Digital Devices:",
         
@@ -157,7 +164,20 @@ angular.module('portalApp')
         category: '1'
     }, {
         title: "Media.doc",
-        details: "item 5 details",
+        details:[{
+            title: "MC",
+        	details: "Sell CS course notes, taking photos for passport",
+        	category: '1'
+
+        },{
+            title: "DC",
+        	details: "who knows",
+        	category: '1'
+        },{
+            title: "STC",
+        	details: "who knows",
+        	category: '1'
+        }],
         category: '1'
     }]};
 
