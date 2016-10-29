@@ -45,11 +45,18 @@ angular.module('portalApp')
         title: "Waterloo Store",
         
         location: "Location: South-campus-hall (SCH)",
-        hours:"Regular Hours Begin Monday, September 19 \r\n \
-Monday – Tuesday: 9am – 6pm \n \
-Wednesday - Friday: 9am - 5pm \r\n \
-Saturday: 12pm - 4pm \r\n \
-Sunday: Closed ",
+        multiHours:[
+            {
+                time: "Regular Hours Begin Monday, September 19",
+            }, {
+                time: "Monday – Tuesday: 9am – 6pm",
+            }, {
+                time: "Wednesday - Friday: 9am - 5pm",
+            }, {
+                time: "Saturday: 12pm - 4pm",
+            }, {
+                time: "Sunday: Closed ",
+            }],
         
         subtitle1: "Men:",       
         details: [    
@@ -106,8 +113,10 @@ Sunday: Closed ",
         
         details: [{
             title: "Arizona",
-        	details: "Who knows",
+        	details: "$0.99",
+            img_url:"https://i5.walmartimages.com/asr/9003fc0e-6a43-4c57-beef-f56705279c51_1.02a16974ea409c97d4fdebfd9be5bf53.jpeg?odnHeight=450&odnWidth=450&odnBg=FFFFFF",
         	category: '1'
+
         },{
             title: "Chips",
         	details: "who knows",
