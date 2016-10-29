@@ -25,7 +25,8 @@ angular.module('portalApp')
         category: '2'},
                             ],
         
-        stationary: [    
+        subtitle1: "Stationery:",
+        details: [    
         {title: "Notebooks",
         details: "item 1 details",
         category: '2'},
@@ -36,9 +37,10 @@ angular.module('portalApp')
             
          {title: "Pens",
         details: "item 1 details",
-        category: '2'}        
+        category: '2'}    
+      
                             ],
-        
+         subtitle2: "Stationery:",
         category: '1'
     }, {
         title: "Waterloo Store",
