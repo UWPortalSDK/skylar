@@ -33,15 +33,15 @@ angular.module('portalApp')
     }]};
 
     // initialize the service
-    sampleSimpleListFactory.init($scope);	
-	$scope.portalHelpers.showView('sampleSimpleListMain.html', 1);
+    skylarFactory.init($scope);	
+	$scope.portalHelpers.showView('skylarMain.html', 1);
 
     // Handle click on an item in the list and search example
     $scope.showDetails = function (item) {
         // Set which item to show in the details view
         $scope.item.value = item;
         // Show details view in the second column
-        $scope.portalHelpers.showView('sampleSimpleListDetails.html', 2);
+        $scope.portalHelpers.showView('skylarDetails.html', 2);
     };
 
     // Handle "previous item" click from the details page
@@ -59,7 +59,7 @@ angular.module('portalApp')
 
 }])
     // Factory maintains the state of the widget
-    .factory('sampleSimpleListFactory', ['$http', '$rootScope', '$filter', '$q', function ($http, $rootScope, $filter, $q) {
+    .factory('skylarFactory', ['$http', '$rootScope', '$filter', '$q', function ($http, $rootScope, $filter, $q) {
         var initialized = {
             value: false
         };
