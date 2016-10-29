@@ -16,7 +16,7 @@
             <widget-searching>
                 <widget-list list="item in searchResults track by item.title" show-items="3">
                     <widget-row clickable ng-click="showDetails(item)">
-                        
+                        <widget-cell fill>{{item.title}}</widget-cell>
                         <widget-cell>
                             <widget-icon name="angle-right"></widget-icon>
                         </widget-cell>
@@ -32,12 +32,7 @@
                 </widget-row>
                 <widget-list list="item in model.value track by item.title" show-items="6">
                     <widget-row clickable ng-click="showDetails(item)">
-                       <widget-cell fill>
-                            <span class="itemName">{{item.title}}</span>
-                            <span ng-repeat="tag in item.tags" class="label label-success">
-				{{tag}}
-			</span>
-                        </widget-cell>
+                      <widget-cell fill>{{item.title}}</widget-cell>
                         <widget-cell>
                             <widget-icon name="angle-right"></widget-icon>
                         </widget-cell>
@@ -57,9 +52,24 @@
             <h2>{{item.value.title}}</h2>
         </widget-cell>
     </widget-row>
+    
     <widget-row>
         <widget-cell>
-            <div class="pHighlight">{{item.value.details}}</div>
+            <h1>{{item.value.location}}</h1>
         </widget-cell>
+    </widget-row>
+    
+     <widget-row>
+        <widget-list>
+             <widget-list list="it in item.value.details" show-items="3">
+                  <widget-row clickable ng-click="showDetails2(it)">
+                        <widget-cell fill>{{it.title}}                 
+                        </widget-cell>
+                        <widget-cell>
+                            <widget-icon name="angle-right"></widget-icon>
+                        </widget-cell>
+                    </widget-row>
+                </widget-list>
+        </widget-list>
     </widget-row>
 </script>
