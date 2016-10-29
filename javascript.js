@@ -13,13 +13,19 @@ angular.module('portalApp')
     // Model for the search and list example
     $scope.model = {value: [{
         
-  
+  		star: "true",
         title: "Campus Tech",
-        note: "*On sale:",
+        note: "*Great Deal: get 30% off on printers befor Oct 30!",
         location: "Location: Student Life Center - Lower Level",
         hours:"Regular Hours: Monday-Friday, 9a.m-5p.m",  
         
-        details: [    
+        services: [    
+        {title: "Services",
+        details: "item 1 details",
+        category: '2'},
+                            ],
+        
+        stationary: [    
         {title: "Notebooks",
         details: "item 1 details",
         category: '2'},
