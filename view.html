@@ -55,7 +55,7 @@
 
     <widget-row>
         <div ng-if="item.value.star">
-            <img src="https://www.google.ca/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwiZsNDCzIDQAhXlxYMKHRxYBdwQjRwIBw&url=http%3A%2F%2Fwww.campustech.uwaterloo.ca%2F&bvm=bv.136811127,d.amc&psig=AFQjCNE4mUa4LLHF32iOMzRqg8O550TmKA&ust=1477850489417439" />
+            <img src="https://info.uwaterloo.ca/retailservices/enews/template/images/esmart_Campus_Tech_cmyk2.jpg" />
         </div>
     </widget-row>
 
@@ -133,6 +133,13 @@
 <!-- VIEW FOR THE SEARCH AND LIST EXAMPLE -->
 <script type="text/ng-template" id="skylarDetails2.html">
     <widget-list-controls prev-click="prevItem" next-click="nextItem" original-item="item.value" prev-text="Previous Item" next-text="Next Item"></widget-list-controls>
+    
+    <widget-row>
+        <widget-cell>
+            <h3>{{item2.value.title}}</h3>
+        </widget-cell>
+    </widget-row>
+    
     <widget-row>
         <widget-cell>
         	<h3 class = "details">{{item2.value.details}}</h3>
