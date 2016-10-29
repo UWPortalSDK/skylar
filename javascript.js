@@ -42,6 +42,18 @@ angular.module('portalApp')
         category: '2'}    
       
                             ],
+        
+         subtitle2: "Digital Devices:",
+        
+         devices: [    
+        {title: "Laptops",
+        details: "price $10",
+        category: '2'},
+            
+        {title: "3D Printers",
+        details: "item 1 details",
+        category: '2'}       
+                            ],
         category: '1'
     }, {
         title: "Waterloo Store",
