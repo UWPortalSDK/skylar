@@ -98,10 +98,24 @@
         </widget-row>
 
         <div ng-if="item.value.subtitle1"><b>{{item.value.subtitle1}}</b></div>
-
+    
         <widget-row>
             <widget-list>
                 <widget-list list="it in item.value.details" show-items="3">
+                    <widget-row clickable ng-click="showDetails2(it)">
+                        <widget-cell fill>{{it.title}}
+                        </widget-cell>
+                        <widget-cell>
+                            <widget-icon name="angle-right"></widget-icon>
+                        </widget-cell>
+                    </widget-row>
+                </widget-list>
+            </widget-list>
+        </widget-row>
+        <div ng-if="item.value.subtitle2"><b>{{item.value.subtitle2}}</b></div>
+        <widget-row>
+            <widget-list>
+                <widget-list list="it in item.value.details2" show-items="3">
                     <widget-row clickable ng-click="showDetails2(it)">
                         <widget-cell fill>{{it.title}}
                         </widget-cell>
