@@ -147,6 +147,16 @@
             <div ng-if="item2.value.img_url"><img class = "img" ; src= {{item2.value.img_url}} /></div>
         </widget-cell>
     </widget-row>
+   
+     <div ng-if="item2.value.multi_details">
+        <widget-list list="it in item2.value.multi_details" show-items="7">
+            <widget-row>
+                <font class="price"><h5>{{it.price}}</h5></font>
+            </widget-row>
+        </widget-list>
+    </div>
+   
+    
     
     <div ng-if="item2.value.service1" >
     				<li>{{item2.value.service1}}</li>
