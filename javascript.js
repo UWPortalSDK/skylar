@@ -12,9 +12,11 @@ angular.module('portalApp')
     
     // Model for the search and list example
     $scope.model = {value: [{
-        title: "Campus Tech",
         
-        location: "Location: Student Life Center Downstairs",
+        image: <img src="https://www.google.ca/search?q=campus+tech&espv=2&biw=1366&bih=638&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiT4tyyy4DQAhVC54MKHf-JAfwQ_AUICCgD#tbm=isch&q=campus+tech+waterloo&imgrc=cCOmXwd5-l0qWM%3A"/>,
+        title: "Campus Tech",
+        note: "*On sale:",
+        location: "Location: Student Life Center - Lower Level",
         hours:"Regular Hours: Monday-Friday, 9a.m-5p.m",  
         
         details: [    
@@ -22,7 +24,7 @@ angular.module('portalApp')
         details: "item 1 details",
         category: '2'},
             
-        {title: "Pensils",
+        {title: "Pencils",
         details: "item 1 details",
         category: '2'},
             

@@ -53,13 +53,16 @@
         </widget-cell>
     </widget-row>
     
-    <widget-row>
-        <widget-cell>
-            <h1>{{item.value.location}}</h1>
-        </widget-cell>
+    <widget-row>     
+            <font color="blue"><h5>{{item.value.location}}</h5></font>  
+    </widget-row>  
+    <widget-row>  
+            <font color="blue"><h5>{{item.value.hours}}</h5></font> 
     </widget-row>
     
-     <widget-row>
+    <div ng-if="item.value.note" class="pDetails well well-lg">{{item.value.note}}</div>
+     
+    <widget-row>
         <widget-list>
              <widget-list list="it in item.value.details" show-items="3">
                   <widget-row clickable ng-click="showDetails2(it)">
