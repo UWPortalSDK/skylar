@@ -68,7 +68,31 @@ Sunday: Closed ",
         category: '1'
     }, {
         title: "Write Stuff",
-        details: "item 3 details",
+        location: "Location: South Campus Hall",
+        multiHours:[
+            {
+                time: "Monday-Tuesday: Monday-Tuesday, 9a.m-6p.m", 
+            },{
+                time: "Wednesday-Friday: Wednesday-Friday, 9a.m-5p.m",
+            },{
+                time: "Saturday: 12p.m - 4p.m",
+            },{
+                time: "Sunday: Closed"
+            }],
+        
+        details: [    
+        {title: "Notebooks",
+        details: "item 1 details",
+        category: '2'},
+            
+        {title: "Pencils",
+        details: "item 1 details",
+        category: '2'},
+            
+         {title: "Pens",
+        details: "item 1 details",
+        category: '2'}        
+                            ],
         category: '1'
     }, {
  title: "International News",
