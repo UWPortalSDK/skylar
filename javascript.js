@@ -19,11 +19,13 @@ angular.module('portalApp')
         location: "Location: Student Life Center - Lower Level",
         hours:"Regular Hours: Monday-Friday, 9a.m-5p.m",  
         
-        services: [    
-        {title: "Services",
-        details: "item 1 details",
-        category: '2'},
-                            ],
+         services: [   
+        {title: "Campus Tech Services",
+        service1: "Screen replacement",
+		service2: "Hard Drive, SSD and RAM upgrades",
+		service3: "Data transfers & recovery",
+		service4: "Virus and malware removal" ,
+        category: '2'} ],
         
         subtitle1: "Stationery:",
         details: [    
