@@ -28,7 +28,7 @@ angular.module('portalApp')
         subtitle1: "Stationery:",
         details: [    
         {title: "Notebooks",
-        details: "item 1 details",
+        details: "price $10",
         category: '2'},
             
         {title: "Pencils",
