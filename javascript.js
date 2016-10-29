@@ -45,11 +45,18 @@ angular.module('portalApp')
         title: "Waterloo Store",
         
         location: "Location: South-campus-hall (SCH)",
-        hours:"Regular Hours Begin Monday, September 19 \r\n \
-Monday – Tuesday: 9am – 6pm \n \
-Wednesday - Friday: 9am - 5pm \r\n \
-Saturday: 12pm - 4pm \r\n \
-Sunday: Closed ",
+        multiHours:[
+            {
+                time: "Regular Hours Begin Monday, September 19",
+            }, {
+                time: "Monday – Tuesday: 9am – 6pm",
+            }, {
+                time: "Wednesday - Friday: 9am - 5pm",
+            }, {
+                time: "Saturday: 12pm - 4pm",
+            }, {
+                time: "Sunday: Closed ",
+            }],
         
         subtitle1: "Men:",       
         details: [    
