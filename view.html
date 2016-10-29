@@ -112,10 +112,11 @@
                 </widget-list>
             </widget-list>
         </widget-row>
+    
         <div ng-if="item.value.subtitle2"><b>{{item.value.subtitle2}}</b></div>
         <widget-row>
             <widget-list>
-                <widget-list list="it in item.value.details2" show-items="3">
+                <widget-list list="it in item.value.devices" show-items="3">
                     <widget-row clickable ng-click="showDetails2(it)">
                         <widget-cell fill>{{it.title}}
                         </widget-cell>
